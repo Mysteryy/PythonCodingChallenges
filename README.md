@@ -17,6 +17,9 @@ The challenge questions come from a variety of sources, such as:
 Note that many challenge questions are often common and can be found in multiple sources, 
 thus they are not usually unique to a given platform.
 
+Due to a variety of sources, naming conventions and code structure may vary between solutions.
+This is to fit within the constraints of each platform. For example, class-based solutions vs module-based solutions, and using camelCase vs snake_case.
+
 ---
 
 ## Approach
@@ -29,6 +32,13 @@ For those challenges, we will abide by the rules and avoid using Python language
 The objective in those challenges is often to test general programming and algorithm knowledge, and using Python specific shortcuts would not reinforce the concept.
 
 ---
+
+## Running A Solution
+Each solution includes runnable unit tests using the Python unittest framework. 
+All tests can be found in a .py file alongside the solution. Simply run all unit tests, or individual tests.
+
+---
+
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
