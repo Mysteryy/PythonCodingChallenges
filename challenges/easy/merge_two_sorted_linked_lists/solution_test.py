@@ -1,5 +1,5 @@
 import unittest
-from solution import Solution, ListNode
+from .solution import Solution, ListNode
 
 
 # Helper functions

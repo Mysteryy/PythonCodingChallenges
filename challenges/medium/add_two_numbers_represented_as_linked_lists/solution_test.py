@@ -1,7 +1,7 @@
 import unittest
 
 from challenges.easy.merge_two_sorted_linked_lists.solution_test import linkedlist_to_list, list_to_linkedlist
-from solution import Solution, ListNode
+from .solution import Solution, ListNode
 
 
 def list_to_linked_list(arr):

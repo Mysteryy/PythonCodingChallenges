@@ -1,5 +1,5 @@
 import unittest
-from solution import Solution, TreeNode
+from .solution import Solution, TreeNode
 
 
 class SolutionTests(unittest.TestCase):
