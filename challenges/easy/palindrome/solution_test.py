@@ -1,23 +1,15 @@
-import unittest
+import pytest
 from .solution import Solution
 
 
-class SolutionTests(unittest.TestCase):
-
-    def test1(self):
-        solution = Solution()
-        input_a = 121
-        expected_output = True
-        self.assertEqual(solution.isPalindrome(input_a), expected_output)
-
-    def test2(self):
-        solution = Solution()
-        input_a = -121
-        expected_output = False
-        self.assertEqual(solution.isPalindrome(input_a), expected_output)
-
-    def test3(self):
-        solution = Solution()
-        input_a = 10
-        expected_output = False
-        self.assertEqual(solution.isPalindrome(input_a), expected_output)
+@pytest.mark.parametrize(
+    "input_a, expected_output",
+    [
+        (121, True),   # Test case 1
+        (-121, False), # Test case 2
+        (10, False),   # Test case 3
+    ],
+)
+def test_is_palindrome(input_a, expected_output):
+    solution = Solution()
+    assert solution.isPalindrome(input_a) == expected_output
